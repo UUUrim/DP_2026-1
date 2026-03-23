@@ -23,7 +23,7 @@ public class Main {
         Iterator<Book> it_genre = bookShelf.iteratorByGenre("소설");
         while (it_genre.hasNext()) {
             Book book = it_genre.next();
-            System.out.println(book.getName() + ", " + book.getYear() + "년, " + (int) book.getPrice() + "원");
+            System.out.println(book.getName() + ", " + book.getGenre() + ", " + book.getYear() + "년, " + (int) book.getPrice() + "원");
         }
         System.out.println();
 
@@ -31,7 +31,7 @@ public class Main {
         Iterator<Book> it_year = bookShelf.iteratorByYear();
         while (it_year.hasNext()) {
             Book book = it_year.next();
-            System.out.println(book.getName() + ", " + book.getYear() + "년, " + (int) book.getPrice() + "원");
+            System.out.println(book.getName() + ", " + book.getGenre() + ", " + book.getYear() + "년, " + (int) book.getPrice() + "원");
         }
         System.out.println();
     }

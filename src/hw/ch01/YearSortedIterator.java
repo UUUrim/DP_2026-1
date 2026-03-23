@@ -15,6 +15,7 @@ public class YearSortedIterator implements Iterator<Book> {
             sortedBooks[i] = bookshelf.getBookAt(i);
         }
 
+        // 출판 년도를 기준으로 내림차순 정렬
         Arrays.sort(sortedBooks, (a,b) -> b.getYear() - a.getYear());
         this.index = 0;
     }
