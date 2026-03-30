@@ -1,7 +1,7 @@
 package hw.ch03;
 
 public abstract class AbstractDisplay {
-    private int repeatCount; // 반복 횟수
+    private int repeatCount; // 반복 횟수 지정 필드
 
     public AbstractDisplay() {
         this.repeatCount = 5; // 기본값은 5
