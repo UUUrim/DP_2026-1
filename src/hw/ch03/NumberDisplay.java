@@ -4,6 +4,10 @@ public class NumberDisplay extends AbstractDisplay {
     private int displayNumber; // 표시해야 하는 숫자
 
     // 생성자 
+    public NumberDisplay(int displayNumber) {
+        this.displayNumber = displayNumber;
+    }
+
     public NumberDisplay(int displayNumber, int repeatCount) {
         super(repeatCount);
         this.displayNumber = displayNumber;
