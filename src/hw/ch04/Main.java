@@ -19,12 +19,12 @@ public class Main {
         card2.use();
 
         // [3-2] Step 2 test : 새로운 카드 타입
-        Factory factory2 = new LicenseCardFactory("2026-03-20");
+        // Factory factory2 = new LicenseCardFactory("2026-03-20");
 
-        Product license1 = factory2.create("Park Jisung");
-        Product license2 = factory2.create("Lee Min-jae");
+        // Product license1 = factory2.create("Park Jisung");
+        // Product license2 = factory2.create("Lee Min-jae");
 
-        license1.use();
-        license2.use();
+        // license1.use();
+        // license2.use();
     }
 }

@@ -13,14 +13,14 @@ public class LicenseCardFactory extends Factory{
         this.baseDate = baseDate;
     }
 
-    protected synchronized Product createProduct(String owner) {
+    protected synchronized Product createProduct(String holder) {
         // baseDate 기준으로 validYears 후를 만료일로 자동 계산
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         String expiryDate = LocalDate.parse(baseDate, formatter)
                                      .plusYears(10)
                                      .format(formatter);
 
-        return new LicenseCard(owner, licenseCounter++, baseDate, expiryDate);
+        return new LicenseCard(holder, licenseCounter++, baseDate, expiryDate);
     }
 
     @Override
