@@ -9,7 +9,7 @@ public class LicenseCard extends Product {
     private String expiryDate;
 
     public LicenseCard(String holder, int licenseNumber, String issuedDate, String expiryDate) {
-        System.out.println(holder + "의 카드를 " + licenseNumber + "번으로 만듭니다.");
+        System.out.println(holder + "의 운전면허증을 " + licenseNumber + "번으로 만듭니다.");
         this.holder = holder;
         this.licenseNumber = licenseNumber;
         this.issuedDate = issuedDate;
